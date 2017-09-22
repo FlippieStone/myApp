@@ -11,15 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var coolLabel: UILabel!
-    var tapCount = 0
     
-    @IBAction func buttonTapped(_ sender: Any) {
+    
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
+    @IBAction func buttonTapped(_ sender: AnyObject) {
         
-        tapCount = tapCount + 1
-        
-        if tapCount >= 5 {
-            coolLabel.text = "Button tapped 5 times!"
-        }
+        coolLabel.text = "Answer:  \(Double(text1.text!)! + Double(text2.text!)!)"
+       
     }
     
     override func viewDidLoad() {

@@ -30,10 +30,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-BP-OwI">
+                                <rect key="frame" x="137.5" y="131" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="18D-6H-sAl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-ev-WuR">
+                                <rect key="frame" x="137.5" y="181" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Z4i-LC-fwQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mEj-BP-OwI" firstAttribute="top" secondItem="izG-xA-jE7" secondAttribute="bottom" constant="20" id="0B9-er-5nn"/>
+                            <constraint firstItem="xhJ-ev-WuR" firstAttribute="top" secondItem="mEj-BP-OwI" secondAttribute="bottom" constant="20" id="1sV-yZ-d8k"/>
+                            <constraint firstItem="mEj-BP-OwI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5e5-iO-OKH"/>
+                            <constraint firstItem="mEj-BP-OwI" firstAttribute="top" secondItem="izG-xA-jE7" secondAttribute="bottom" constant="20" id="6xt-gV-JaG"/>
+                            <constraint firstItem="mEj-BP-OwI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BUe-BJ-jtZ"/>
                             <constraint firstItem="vmg-jw-J1d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2s-1M-Vmq"/>
+                            <constraint firstItem="xhJ-ev-WuR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SOn-je-u1G"/>
+                            <constraint firstItem="mEj-BP-OwI" firstAttribute="top" secondItem="izG-xA-jE7" secondAttribute="bottom" constant="20" id="XOD-sz-ee0"/>
+                            <constraint firstItem="mEj-BP-OwI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nEm-G6-7hJ"/>
                             <constraint firstItem="vmg-jw-J1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qJE-PL-U0N"/>
                             <constraint firstItem="izG-xA-jE7" firstAttribute="top" secondItem="vmg-jw-J1d" secondAttribute="bottom" constant="20" id="qVh-5Y-AXY"/>
                             <constraint firstItem="izG-xA-jE7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u3A-KE-z9c"/>
@@ -42,10 +68,13 @@
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="vmg-jw-J1d" id="FEA-1z-Gfa"/>
+                        <outlet property="text1" destination="mEj-BP-OwI" id="j9G-ea-j8a"/>
+                        <outlet property="text2" destination="xhJ-ev-WuR" id="nMx-4G-hpZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
